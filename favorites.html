@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorites</title>
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- Link To CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo"><em>DREAMS PLATFORM <i class='bx bxs-camera-movie'></i></em></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="index.html#about">Top Movies</a></li>
+            <li><a href="index.html#menu">Categories</a></li>
+            <li><a href="index.html#services">TV Showes</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <!-- Dark Mode -->
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+
+    <!-- Favorites Section -->
+    <section class="favorites" id="favorites">
+        <div class="heading">
+            <br>
+            <h2>Movies You Love</h2>
+        </div>
+        <div class="favorites-container" id="favorites-container">
+            <!-- Favorites will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- Link To JavaScript -->
+    <script>
+        // document.addEventListener('DOMContentLoaded', function() {
+        //     const favoritesContainer = document.getElementById('favorites-container');
+        //     const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+        //     if (favorites.length === 0) {
+        //         favoritesContainer.innerHTML = '<p>No favorites added yet.</p>';
+        //     } else {
+        //         favorites.forEach(movie => {
+        //             const favoriteItem = `
+        //                 <div class="box">
+        //                     <div class="box-img">
+        //                         <img src="${movie.image}" alt="${movie.title}">
+        //                     </div>
+        //                     <h2>${movie.title}</h2>
+        //                     <h3>${movie.quality}</h3>
+        //                     <span>Watch Now</span>
+        //                     <i class='bx bx-play-circle'></i>
+        //                 </div>
+        //             `;
+        //             favoritesContainer.innerHTML += favoriteItem;
+        //         });
+        //     }
+        // });
+
+        document.addEventListener('DOMContentLoaded', function() {
+    const favoritesContainer = document.getElementById('favorites-container');
+    let favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+
+    function renderFavorites() {
+        favoritesContainer.innerHTML = '';
+
+        if (favorites.length === 0) {
+            favoritesContainer.innerHTML = '<p>No favorites added yet.</p>';
+        } else {
+            favorites.forEach((movie, index) => {
+                const favoriteItem = document.createElement('div');
+                favoriteItem.classList.add('box');
+                favoriteItem.innerHTML = `
+                    <div class="box-img">
+                        <img src="${movie.image}" alt="${movie.title}">
+                    </div>
+                    <h2>${movie.title}</h2>
+                    <h3>${movie.quality}</h3>
+                    <i class='bx bx-play-circle'></i>
+<button class="delete-btn" data-index="${index}" style="background: #fe0303; color: white; border: none; padding: 10px ; border-radius:10px; cursor: pointer; transition: 0.3s ease; font-weight: bold; display: flex; align-items: center; justify-content: center; text-align: center; width: 100px;">Delete</button>
+                `;
+                favoritesContainer.appendChild(favoriteItem);
+            });
+
+            document.querySelectorAll('.delete-btn').forEach(button => {
+                button.addEventListener('click', function() {
+                    const index = this.getAttribute('data-index');
+                    removeFavorite(index);
+                });
+            });
+        }
+    }
+
+    function removeFavorite(index) {
+        favorites.splice(index, 1); // Remove from array
+        localStorage.setItem('favorites', JSON.stringify(favorites)); // Update localStorage
+        renderFavorites(); // Re-render the list
+    }
+
+    renderFavorites();
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DREAMS PLATFORM</title>
+    <!-- Box Icons -->
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <!-- Link To CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <a href="#" class="logo"><em>DREAMS PLATFORM <i class='bx bxs-camera-movie' ></i></em></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">New Movies</a></li>
+            <li><a href="#menu">Top Movies</a></li>
+            <li><a href="#services">TV Showes</a></li>
+            <!-- <li><a href="#contact">Contact</a></li> -->
+            <li><a href="favorites.html">Favorites</a></li> <!-- New Favorites Link -->
+            <li><a href="login.html">LogIn</a></li> <!-- New Favorites Link -->
+
+            <!-- Dark Mode -->
+            <div class="bx bx-moon" id="darkmode"></div>
+
+            <!--favorat-->
+        
+         
+        </ul>
+
+
+
+
+        </script>
+    </header>
+    <!-- Home  Section-->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Watch Without Limits</h1>
+            <h2>Watch Your Favorite Movie Anywhere</h2>
+            <a href="#" class="btn">Watch Now<i class='bx bx-play-circle'></i></a>
+            
+
+        </div>
+        <div class="home-img">
+            <img src="images/Superman-LookUp-Banner-1.png" alt="">
+        </div>
+    </section>
+
+   
+
+    <!-- About -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/interstellar_imax-banner.jpg" alt="">
+        </div>
+        <div class="about-text">
+            <span>Top Movies</span>
+            <h2>we Make You More Comfortable <br> The World Inside Your Hands </h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quo iure rem ducimus tenetur deserunt commodi doloribus, quibusdam vel fuga?</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+
+    <!-- Menu -->
+<!-- Video Popup -->
+
+
+
+
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>Top Movies</span>
+            <h2>Top Movie In This Year</h2>
+        </div>
+        <div class="menu-container">
+
+
+            <!-- Box 1 -->
+            <!-- Each box has a data-video attribute with unique video path -->
+<div class="box" onclick="openVideoPopup(this)" 
+     data-video="images/Captain America_ Brave New World _ Official Trailer.mp4">
+    <div class="box-img">
+        <img src="images/captin.jpg" alt="">
+    </div>
+    <h2>The Last Of US</h2>
+    <h3>4K NOW</h3>
+    <span>Watch Now</span>
+    <i class='bx bx-bookmark-heart'></i>
+</div>
+<!-- Video Popup -->
+<div id="videoPopup" class="video-popup">
+    <div class="video-popup-content">
+        <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+        <video controls>
+            <!-- Source will be dynamically set -->
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+            <!-- Box 2 -->
+            
+                <div class="box" onclick="openVideoPopup(this)" 
+     data-video="images/The Martian _ Official Trailer [HD] _ 20th Century FOX.mp4">
+                <div class="box-img">
+                    <img src="images/the-martian-2015-2JHCR4W.jpg" alt="">
+                </div>
+                <h2>The Martian</h2>
+                <h3>4K NOW</h3>
+                <span>Whatch Now</span>
+                <i class='bx bx-bookmark-heart'></i>
+            </div>
+            <!-- Video Popup -->
+            <div id="videoPopup" class="video-popup">
+                <div class="video-popup-content">
+                    <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+                    <video controls>
+                        
+                    </video>
+                </div>
+            </div>
+            <!-- Box 3 -->
+            <div class="box" onclick="openVideoPopup(this)" 
+            data-video="images/The Martian _ Official Trailer [HD] _ 20th Century FOX.mp4">
+                <div class="box-img">
+                    <img src="images/last-of-us-tv-1.webp" alt="">
+                </div>
+                <h2>The Last Of US</h2>
+                <h3>4K NOW</h3>
+                <span>Watch Now</span>
+                <i class='bx bx-bookmark-heart'></i>
+            </div>
+        
+            <!-- Video Popup -->
+            <div id="videoPopup" class="video-popup">
+                <div class="video-popup-content">
+                    <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+                  
+                </div>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="box" onclick="openVideoPopup(this)" 
+            data-video="images/The Martian _ Official Trailer [HD] _ 20th Century FOX.mp4">
+                <div class="box-img">
+                    <img src="images/after.jpg" alt="">
+                </div>
+                <h2>After</h2>
+                <h3>4K NOW</h3>
+                <span>Watch Now</span>
+                <i class='bx bx-bookmark-heart'></i>
+            </div>
+<!-- Video Popup -->
+<div id="videoPopup" class="video-popup">
+    <div class="video-popup-content">
+        <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+    </div>
+</div>
+            <!-- Box 5 -->
+            <div class="box" onclick="openVideoPopup(this)" 
+            data-video="images/The Martian _ Official Trailer [HD] _ 20th Century FOX.mp4">
+                <div class="box-img">
+                    <img src="images/avenger.webp" alt="">
+                </div>
+                <h2>AvengerS</h2>
+                <h3>4K NOW</h3>
+                <span>Watch Now</span>
+                <i class='bx bx-bookmark-heart'></i>
+            </div>
+
+            <!-- Video Popup -->
+            <div id="videoPopup" class="video-popup">
+                <div class="video-popup-content">
+                    <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+                </div>
+            </div>
+            <!-- Box 6 -->
+            <div class="box" onclick="openVideoPopup(this)" 
+            data-video="images/The Martian _ Official Trailer [HD] _ 20th Century FOX.mp4">
+                <div class="box-img">
+                    <img src="images/joker.jpg" alt="">
+                </div>
+                <h2>Joker</h2>
+                <h3>4K NOW</h3>
+                <span>Watch Now</span>
+                <i class='bx bx-bookmark-heart'></i>
+            </div>
+
+            <!-- Video Popup -->
+            <div id="videoPopup" class="video-popup">
+                <div class="video-popup-content">
+                    <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+                </div>
+            </div>
+            <!-- Box 7 -->
+            <div class="box" onclick="openVideoPopup(this)" 
+            data-video="images/The Martian _ Official Trailer [HD] _ 20th Century FOX.mp4">
+                <div class="box-img">
+                    <img src="images/madmax.png" alt="">
+                </div>
+                <h2>Mad Max</h2>
+                <h3>4K NOW</h3>
+                <span>Watch Now</span>
+                <i class='bx bx-bookmark-heart'></i>
+            </div>
+<!-- Video Popup -->
+<div id="videoPopup" class="video-popup">
+    <div class="video-popup-content">
+        <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+    </div>
+</div>
+            <!-- Box 8 -->
+            <div class="box" onclick="openVideoPopup(this)" 
+            data-video="images/The Martian _ Official Trailer [HD] _ 20th Century FOX.mp4">
+                <div class="box-img">
+                    <img src="images/reven.webp" alt="">
+                </div>
+                <h2>Reven</h2>
+                <h3>4K NOW</h3>
+                <span>Whatch Now</span>
+                <i class='bx bx-bookmark-heart'></i>
+            </div>
+<!-- Video Popup -->
+<div id="videoPopup" class="video-popup">
+    <div class="video-popup-content">
+        <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+        
+    </div>
+</div>
+            <!-- Box 9 -->
+            <div class="box" onclick="openVideoPopup(this)" 
+            data-video="images/The Martian _ Official Trailer [HD] _ 20th Century FOX.mp4">
+                <div class="box-img">
+                    <img src="images/walk.jpg" alt="">
+                </div>
+                <h2>Walk</h2>
+                <h3>4K NOW</h3>
+                <span>Whatch Now</span>
+                <i class='bx bx-bookmark-heart'></i>
+            </div>
+<!-- Video Popup -->
+<div id="videoPopup" class="video-popup">
+    <div class="video-popup-content">
+        <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+    </div>
+</div>
+            <!-- Box 10 -->
+            <div class="box" onclick="openVideoPopup(this)" 
+            data-video="images/The Martian _ Official Trailer [HD] _ 20th Century FOX.mp4">
+                <div class="box-img">
+                    <img src="images/primum.jpg" alt="">
+                </div>
+                <h2>Primum</h2>
+                <h3>4K NOW</h3>
+                <span>Whatch Now</span>
+                <i class='bx bx-play-circle'></i>
+                <i class='bx bx-bookmark-heart'></i>
+            </div>
+
+            <!-- Video Popup -->
+            <div id="videoPopup" class="video-popup">
+                <div class="video-popup-content">
+                    <span class="close-btn" onclick="closeVideoPopup()">&times;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- carousel -->
+
+    <div class="heading">
+        <span>Top Movies</span>
+        <h2>Top Movie In This Month</h2>
+    </div>
+
+    <div class="container">
+        <div class="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="images/land2.jpg" alt="Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/land5.jpg" alt="Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/land4.jpg" alt="Image 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" onclick="prevSlide()">&#10094;</button>
+            <button class="carousel-control-next" onclick="nextSlide()">&#10095;</button>
+        </div>
+    </div>
+
+
+
+
+    <!-- End carousel -->
+
+
+
+
+
+
+    <section class="services" id="services">
+        <div class="heading">
+            <span>TV Showes</span>
+            <h2>We Provide Best Vision Services</h2>
+        </div>
+
+        <div class="servives-container">
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/prison-break-mastermind-i3057.jpg" alt="">
+                </div>
+                <h2>The Last Of US</h2>
+                <h3>4K NOW</h3>
+                <span>Whatch Now</span>
+                <i class='bx bx-play-circle'></i>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/breaking bad.jpg" alt="">
+                </div>
+                <h2>The Last Of US</h2>
+                <h3>4K NOW</h3>
+                <span>Whatch Now</span>
+                <i class='bx bx-play-circle'></i>
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <div class="box-img">
+                    <img src="images/tent.jpg" alt="">
+                </div>
+                <h2>Tent</h2>
+                <h3>4K NOW</h3>
+                <span>Whatch Now</span>
+                <i class='bx bx-play-circle'></i>
+            </div>
+        </div>
+
+    
+
+    </section>
+
+ <!-- slider -->
+ <div class="wrapper">
+    <input type="radio" name="slide" id="one" checked>
+    <input type="radio" name="slide" id="two">
+    <input type="radio" name="slide" id="three">
+    <input type="radio" name="slide" id="four">
+    <input type="radio" name="slide" id="five">
+    <input type="radio" name="slide" id="six">
+    
+    <div class="img img-1">
+      <img src="images/land2.jpg" alt="">  
+    </div>
+    <div class="img img-2">
+        <img src="images/landescape1.jpg" alt="">  
+      </div>
+      <div class="img img-3">
+        <img src="images/land5.jpg" alt="">  
+      </div>
+      <div class="img img-4">
+        <img src="images/land4.jpg" alt="">  
+      </div>
+      <div class="img img-5">
+        <img src="images/reven.webp" alt="">  
+      </div>
+      <div class="img img-6">
+        <img src="images/interstellar_imax-banner.jpg" alt="">  
+      </div>
+    
+  
+    
+    
+      </div>
+    
+
+    </div>
+    
+
+    
+        <!-- end slider -->
+
+
+
+    <!-- Connect -->
+    <section class="connect">
+        <div class="connect-text">
+            <span>Let's Talk</span>
+            <h2>Connect now</h2>
+        </div>
+        <a href="#" class="btn">Contact Us</a>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <div class="contact-box">
+            <h3>MOVIES WATCHER</h3>
+            <span>Connect With Us</span>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+            </div>
+        </div>
+        <div class="contact-box">
+            <h3>Menu Links</h3>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#services">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </div>
+        <div class="contact-box">
+            <h3>Quick Links</h3>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Privacy Policy">Privacy Policy</a></li>
+            <li><a href="#Disclaimer">Disclaimer</a></li>
+            <li><a href="#Terms Of Use">Terms Of Use</a></li>
+        </div>
+        <div class="contact-box address">
+            <h3>Contact</h3>
+            <i class='bx bxs-map' ><span>Jordan ,amman ,mekkah st</span></i>
+            <i class='bx bxs-phone' ><span>+962 795698678</span></i>
+            <i class='bx bxs-envelope' ><span>hashim.ad2002@gmail.com</span></i>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>© Hashim Adnan All Right Reserved.</p>
+    </div>
+
+
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Link To JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+
+    <link rel="stylesheet" href="login.css">  
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+<body>
+    <div class="warapper">
+<form action="">
+<h1>login</h1>
+
+<div class="inputbox">
+<input type="text" placeholder="username" required>
+<i class='bx bxs-user'></i>
+</div>
+
+<div class="inputbox">
+    <input type="password" placeholder="password" required>
+    <i class='bx bxs-lock-alt'></i>
+    </div>
+
+    <div class="remember-forgot">
+    <label><input type="checkbox">remember me</label>
+    <a href="#">forgot password?</a>
+</div>
+
+<button type="submit" class="btn">login</button>
+<div class="register">
+    <p>dont have an account? <a href="#">register</a></p>
+</div>
+</form>
+
+
+    </div> -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Login</title>
+        <link rel="stylesheet" href="login.css">  
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <div class="warapper">
+            <form action="" id="loginForm">
+                <h1>Login</h1>
+                <div class="inputbox">
+                    <input type="text" placeholder="Username" required id="username">
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="inputbox">
+                    <input type="password" placeholder="Password" required id="password">
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot password?</a>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="register">
+                    <p>Don't have an account? <a href="#">Register</a></p>
+                </div>
+            </form>
+        </div>
+    
+
+
+
+
+        <script>
+   
+   
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            
+            // Get existing users from localStorage or create empty object
+            const users = JSON.parse(localStorage.getItem('users')) || {};
+            
+            if (users[username]) {
+                // User exists, check password
+                if (users[username] === password) {
+                    alert('Login successful!');
+                    window.location.href = 'index.html';
+
+                    // Redirect to another page or perform other actions
+                } else {
+                    alert('Wrong password! Please try again.');
+                }
+            } else {
+                // New user, save to localStorage
+                users[username] = password;
+                localStorage.setItem('users', JSON.stringify(users));
+                alert(' successful! ');
+                window.location.href = 'index.html';
+
+            }
+        });
+    </script>
+</body>
+</html>
